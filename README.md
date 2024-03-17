@@ -1,2 +1,2 @@
 # conceptor-pages
-The documents and instructions for the conceptor tool
+The running examples, documents and instructions for the conceptor tool
