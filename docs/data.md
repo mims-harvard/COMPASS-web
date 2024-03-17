@@ -1,0 +1,38 @@
+## Immunotherapy Response Prediction (ITRP) Datasets
+
+
+### About
+This collection pertains to datasets utilized for analyzing the response to immune therapy across various cancer types. Each dataset is characterized by the cohort size, the specific type of cancer studied, the count of patients categorized into responders and non-responders, the sequencing technology used, and associated scholarly references.
+
+These datasets are crucial for researching the effectiveness of immune therapies, understanding the molecular and genetic factors influencing patient response, and developing personalized treatment strategies. Please download all of these datasets via here: https://drive.google.com/drive/folders/1ZsLvB9xUYHs4OrAXMXRYeKXNoaxMbMsG
+
+
+| Group         | Cohort      | Cancer Type | Patients(R/NR) | Sequencer      | Reference                                                                                                      |
+| ------------- | ----------- | ----------- | -------------- | -------------- | -------------------------------------------------------------------------------------------------------------- |
+| Small cohort  | Choueiri    | KIRC        | 16(3/13)       | HiSeq2500      | [Choueiri et al. Clinical Cancer Research, 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5106340/)        |
+| Small cohort  | Miao        | KIRC        | 17(5/12)       | HiSeq2000      | [Miao et al. Science, 2018](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6035749/)                             |
+| Small cohort  | Snyder      | BLCA        | 21(7/14)       | HiSeq4000      | [Snyder et al. PLoS Med. 2017](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002309) |
+| Small cohort  | Zhao        | GBM         | 25(11/14)      | HiSeq2000      | [Zhao et al. Nature Medicine, 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6810613/)                     |
+| Small cohort  | SU2CLC2     | LUSC        | 25(8/17)       | HiSeq2500      | [Ravi et al. Nature Genetics, 2023](https://www.nature.com/articles/s41588-023-01355-5)                        |
+| Medium cohort | Hugo        | SKCM        | 26(14/12)      | HiSeq2000      | [Hugo et al. Cell, 2016](https://pubmed.ncbi.nlm.nih.gov/26997480/)                                            |
+| Medium cohort | Allen       | SKCM        | 39(13/26)      | HiSeq2500      | [Van Allen et al. Science, 2015](https://www.ncbi.nlm.nih.gov/pubmed/26359337)                                 |
+| Medium cohort | MGH         | SKCM        | 34(12/22)      | HiSeq2500      | [Freeman et al Cell Rep. Med, 2022](https://www.cell.com/cell-reports-medicine/pdf/S2666-3791(21)00377-3.pdf)  |
+| Medium cohort | Kim         | STAD        | 45(12/33)      | HiSeq2500      | [Kim et al. Nature Medicine, 2018](https://pubmed.ncbi.nlm.nih.gov/30013197/)                                  |
+| Medium cohort | Riaz        | SKCM        | 51(10/41)      | HiSeq2000/2500 | [Riaz et al. Cell, 2017](https://www.ncbi.nlm.nih.gov/pubmed/29033130)                                         |
+| Medium cohort | Rose        | BLCA        | 89(16/73)      | NovaSeq6000    | [Rose et al. BJC 2021](https://www.nature.com/articles/s41416-021-01488-6)                                     |
+| Medium cohort | Gide        | SKCM        | 73(40/33)      | HiSeq2500      | [Gide et al. Cancer Cell, 2019](https://www.cell.com/cancer-cell/pdfExtended/S1535-6108(19)30037-6)            |
+| Large cohort  | SU2CLC1     | LUAD        | 102(38/64)     | HiSeq2500      | [Ravi et al. Nature Genetics, 2023](https://www.nature.com/articles/s41588-023-01355-5)                        |
+| Large cohort  | Liu         | SKCM        | 107(41/66)     | HiSeq2500      | [Liu et al. Nature Medicine. 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6898788/)                      |
+| Large cohort  | IMmotion150 | KIRC        | 165(48/117)    | HiSeq2500      | [McDermott et al. Nature Medicine, 2018](https://pubmed.ncbi.nlm.nih.gov/29867230/)                            |
+| Large cohort  | IMVigor210  | BLCA        | 298(68/230)    | HiSeq2500      | [IMvigor210 Study Group. The Lancet, 2017](https://www.nature.com/articles/nature25501.pdf)                    |
+
+
+
+### Acknowledgments
+We extend our heartfelt gratitude to all the patients who participated in these studies, offering invaluable contributions to the advancement of medical science. Their willingness to be part of this research has played a crucial role in enhancing our understanding of immune therapy responses. We also express our sincere appreciation to the doctors, whose expertise and dedication have been instrumental in the meticulous collection and analysis of the data. Their commitment to excellence ensures the reliability and significance of these datasets. Furthermore, we acknowledge the hard work and perseverance of the scientific workers involved in these projects. Their rigorous efforts in data processing, analysis, and maintenance have been essential in developing these comprehensive datasets. Together, the collaboration of patients, doctors, and scientific workers has paved the way for significant advancements in the field of oncology and personalized medicine.
+
+
+### Statement of Ethical Compliance and Liability
+We hereby declare that in the process of acquiring, handling, and analyzing these datasets, we have strictly adhered to the highest standards of ethics and scientific integrity. No actions were taken that would harm the principles of ethics or the integrity of scientific research. Additionally, all procedures and analyses were conducted in full compliance with the applicable legal and regulatory requirements.
+
+We emphasize that our role was confined to the development and analysis of these datasets, and we bear no responsibility or liability for the outcomes or results produced by third parties using these data sets. Users of these datasets should independently verify the data and ensure their analyses are compliant with ethical and legal standards. We encourage the responsible use of these datasets in a manner that respects the dignity, privacy, and rights of all participants involved in the studies.
