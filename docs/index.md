@@ -1,3 +1,5 @@
+theme: jekyll-theme-minimal
+
 ## Welcome to conceptor pages
 
 ## **conceptor 101**
