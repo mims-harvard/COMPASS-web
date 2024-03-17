@@ -1,0 +1,152 @@
+Aug 24 11:49:51 ..... started STAR run
+Aug 24 11:49:52 ..... loading genome
+Aug 24 11:50:11 ..... started 1st pass mapping
+Aug 24 12:43:19 ..... finished 1st pass mapping
+Aug 24 12:43:20 ..... inserting junctions into the genome indices
+Aug 24 12:45:45 ..... started mapping
+Aug 24 15:42:39 ..... finished mapping
+Aug 24 15:42:41 ..... finished successfully
+Aug 24 15:42:42 ..... started STAR run
+Aug 24 15:42:42 ..... loading genome
+Aug 24 15:43:00 ..... started 1st pass mapping
+Aug 24 16:29:57 ..... finished 1st pass mapping
+Aug 24 16:29:59 ..... inserting junctions into the genome indices
+Aug 24 16:32:26 ..... started mapping
+Aug 24 19:12:19 ..... finished mapping
+Aug 24 19:12:21 ..... finished successfully
+Aug 24 19:12:22 ..... started STAR run
+Aug 24 19:12:22 ..... loading genome
+Aug 24 19:12:46 ..... started 1st pass mapping
+Aug 24 19:28:23 ..... finished 1st pass mapping
+Aug 24 19:28:25 ..... inserting junctions into the genome indices
+Aug 24 19:31:10 ..... started mapping
+Aug 24 20:04:11 ..... finished mapping
+Aug 24 20:04:15 ..... finished successfully
+Aug 24 20:04:16 ..... started STAR run
+Aug 24 20:04:16 ..... loading genome
+Aug 24 20:04:39 ..... started 1st pass mapping
+Aug 24 20:42:16 ..... finished 1st pass mapping
+Aug 24 20:42:18 ..... inserting junctions into the genome indices
+Aug 24 20:44:59 ..... started mapping
+Aug 25 00:24:13 ..... finished mapping
+Aug 25 00:24:18 ..... finished successfully
+Aug 25 00:24:19 ..... started STAR run
+Aug 25 00:24:20 ..... loading genome
+Aug 25 00:24:42 ..... started 1st pass mapping
+Aug 25 00:39:37 ..... finished 1st pass mapping
+Aug 25 00:39:38 ..... inserting junctions into the genome indices
+Aug 25 00:42:09 ..... started mapping
+Aug 25 02:26:58 ..... finished mapping
+Aug 25 02:27:04 ..... finished successfully
+Aug 25 02:27:05 ..... started STAR run
+Aug 25 02:27:05 ..... loading genome
+Aug 25 02:27:28 ..... started 1st pass mapping
+Aug 25 02:42:08 ..... finished 1st pass mapping
+Aug 25 02:42:09 ..... inserting junctions into the genome indices
+Aug 25 02:44:44 ..... started mapping
+Aug 25 03:23:03 ..... finished mapping
+Aug 25 03:23:07 ..... finished successfully
+Aug 25 03:23:08 ..... started STAR run
+Aug 25 03:23:08 ..... loading genome
+Aug 25 03:23:29 ..... started 1st pass mapping
+Aug 25 03:35:20 ..... finished 1st pass mapping
+Aug 25 03:35:21 ..... inserting junctions into the genome indices
+Aug 25 03:37:54 ..... started mapping
+Aug 25 04:05:19 ..... finished mapping
+Aug 25 04:05:25 ..... finished successfully
+Aug 25 04:05:26 ..... started STAR run
+Aug 25 04:05:26 ..... loading genome
+Aug 25 04:05:47 ..... started 1st pass mapping
+Aug 25 04:17:23 ..... finished 1st pass mapping
+Aug 25 04:17:25 ..... inserting junctions into the genome indices
+Aug 25 04:20:00 ..... started mapping
+Aug 25 04:59:36 ..... finished mapping
+Aug 25 04:59:41 ..... finished successfully
+Aug 25 04:59:41 ..... started STAR run
+Aug 25 04:59:42 ..... loading genome
+Aug 25 05:00:00 ..... started 1st pass mapping
+Aug 25 05:19:31 ..... finished 1st pass mapping
+Aug 25 05:19:32 ..... inserting junctions into the genome indices
+Aug 25 05:21:52 ..... started mapping
+Aug 25 06:17:45 ..... finished mapping
+Aug 25 06:17:49 ..... finished successfully
+Aug 25 06:17:50 ..... started STAR run
+Aug 25 06:17:52 ..... loading genome
+Aug 25 06:18:19 ..... started 1st pass mapping
+Aug 25 06:35:41 ..... finished 1st pass mapping
+Aug 25 06:35:42 ..... inserting junctions into the genome indices
+Aug 25 06:38:17 ..... started mapping
+Aug 25 07:34:48 ..... finished mapping
+Aug 25 07:34:53 ..... finished successfully
+Aug 25 07:34:54 ..... started STAR run
+Aug 25 07:34:55 ..... loading genome
+Aug 25 07:35:15 ..... started 1st pass mapping
+Aug 25 07:50:39 ..... finished 1st pass mapping
+Aug 25 07:50:41 ..... inserting junctions into the genome indices
+Aug 25 07:53:11 ..... started mapping
+Aug 25 08:31:52 ..... finished mapping
+Aug 25 08:31:56 ..... finished successfully
+Aug 25 08:31:58 ..... started STAR run
+Aug 25 08:31:58 ..... loading genome
+Aug 25 08:32:17 ..... started 1st pass mapping
+Aug 25 08:45:18 ..... finished 1st pass mapping
+Aug 25 08:45:19 ..... inserting junctions into the genome indices
+Aug 25 08:47:27 ..... started mapping
+Aug 25 09:18:46 ..... finished mapping
+Aug 25 09:18:51 ..... finished successfully
+Aug 25 09:18:52 ..... started STAR run
+Aug 25 09:18:52 ..... loading genome
+Aug 25 09:19:21 ..... started 1st pass mapping
+Aug 25 10:16:00 ..... finished 1st pass mapping
+Aug 25 10:16:02 ..... inserting junctions into the genome indices
+Aug 25 10:18:37 ..... started mapping
+Aug 25 12:46:34 ..... finished mapping
+Aug 25 12:46:38 ..... finished successfully
+Aug 25 12:46:40 ..... started STAR run
+Aug 25 12:46:40 ..... loading genome
+Aug 25 12:47:10 ..... started 1st pass mapping
+Aug 25 13:46:57 ..... finished 1st pass mapping
+Aug 25 13:46:59 ..... inserting junctions into the genome indices
+Aug 25 13:50:24 ..... started mapping
+Aug 25 18:14:58 ..... finished mapping
+Aug 25 18:15:04 ..... finished successfully
+Aug 25 18:15:07 ..... started STAR run
+Aug 25 18:15:07 ..... loading genome
+Aug 25 18:15:36 ..... started 1st pass mapping
+Aug 25 18:39:56 ..... finished 1st pass mapping
+Aug 25 18:39:57 ..... inserting junctions into the genome indices
+Aug 25 18:42:42 ..... started mapping
+Aug 25 19:53:24 ..... finished mapping
+Aug 25 19:53:30 ..... finished successfully
+Aug 25 19:53:31 ..... started STAR run
+Aug 25 19:53:31 ..... loading genome
+Aug 25 19:54:12 ..... started 1st pass mapping
+Aug 25 20:09:25 ..... finished 1st pass mapping
+Aug 25 20:09:27 ..... inserting junctions into the genome indices
+Aug 25 20:11:41 ..... started mapping
+Aug 25 20:47:09 ..... finished mapping
+Aug 25 20:47:14 ..... finished successfully
+Aug 25 20:47:15 ..... started STAR run
+Aug 25 20:47:16 ..... loading genome
+Aug 25 20:47:44 ..... started 1st pass mapping
+Aug 25 21:29:13 ..... finished 1st pass mapping
+Aug 25 21:29:14 ..... inserting junctions into the genome indices
+Aug 25 21:32:03 ..... started mapping
+Aug 25 23:31:13 ..... finished mapping
+Aug 25 23:31:19 ..... finished successfully
+Aug 25 23:31:20 ..... started STAR run
+Aug 25 23:31:20 ..... loading genome
+Aug 25 23:31:57 ..... started 1st pass mapping
+Aug 26 00:04:40 ..... finished 1st pass mapping
+Aug 26 00:04:42 ..... inserting junctions into the genome indices
+Aug 26 00:07:34 ..... started mapping
+Aug 26 03:52:59 ..... finished mapping
+Aug 26 03:53:05 ..... finished successfully
+Aug 26 03:53:06 ..... started STAR run
+Aug 26 03:53:06 ..... loading genome
+Aug 26 03:53:40 ..... started 1st pass mapping
+Aug 26 04:07:14 ..... finished 1st pass mapping
+Aug 26 04:07:16 ..... inserting junctions into the genome indices
+Aug 26 04:09:37 ..... started mapping
+Aug 26 04:45:28 ..... finished mapping
+Aug 26 04:45:33 ..... finished successfully
