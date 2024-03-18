@@ -10,8 +10,9 @@ Date: 2024-03-17
 
 ## Conceptor 
 
-* Codebase: https://github.com/mims-harvard/conceptor
-* Document: https://github.com/mims-harvard/conceptor-101/
+### * Codebase: https://github.com/mims-harvard/conceptor
+### * Document: https://github.com/mims-harvard/conceptor-101/
+### * Slack: https://zitniklab-harvard.slack.com/archives/C05S6LEQ3ED
 
 ## Download all required files
 
