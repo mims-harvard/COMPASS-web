@@ -3,7 +3,6 @@
 ## **conceptor 101**
 #### This page provides details about the code, data, and pre-trained, fine-tuned model used for predicting responses to immunotherapy.
 
-https://zitniklab.hms.harvard.edu/conceptor-101/
 
 Date: 2024-03-17
 
