@@ -3,6 +3,8 @@
 ## **conceptor 101**
 #### This page provides details about the code, data, and pre-trained, fine-tuned model used for predicting responses to immunotherapy.
 
+https://zitniklab.hms.harvard.edu/conceptor-101/
+
 Date: 2024-03-17
 
 
@@ -11,7 +13,7 @@ Date: 2024-03-17
 [![Codebase](https://img.shields.io/badge/Codebase-Github-green)](https://github.com/mims-harvard/conceptor)
 [![Document](https://img.shields.io/badge/Document-Github-yellow)](https://github.com/mims-harvard/conceptor-101/)
 [![Slack](https://img.shields.io/badge/Project-Slack-orange)](https://zitniklab-harvard.slack.com/archives/C05S6LEQ3ED)
-[![Paper](https://img.shields.io/badge/Paper-Slack-blue)](https://www.overleaf.com/project/65675762ab879fbbe676398d)
+[![Paper](https://img.shields.io/badge/Paper-Overleaf-blue)](https://www.overleaf.com/project/65675762ab879fbbe676398d)
 
 
 ## Download all required files [here](https://drive.google.com/drive/folders/1ZsLvB9xUYHs4OrAXMXRYeKXNoaxMbMsG)
