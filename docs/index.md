@@ -60,3 +60,5 @@ In this example, we will demonstrate how to install the conceptor dependency and
 
 [4.Prediction on new dataset](https://zitniklab.hms.harvard.edu/conceptor-101/03_conceptor_prediction.html)
 
+[5.Building a LGR model](https://zitniklab.hms.harvard.edu/conceptor-101/04_logstic_regression.html)
+
