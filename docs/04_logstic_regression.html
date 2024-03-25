@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>01_ITRP_datasets_description</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>04_logstic_regression</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7476,163 +7476,19 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8ab83bae-8c7c-44ac-809e-1b47e009c1a6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6c35e365-90e4-489c-968e-70c869b1b111">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Immunotherapy-Response-Prediction-(ITRP)-Datasets">Immunotherapy Response Prediction (ITRP) Datasets<a class="anchor-link" href="#Immunotherapy-Response-Prediction-(ITRP)-Datasets">¶</a></h2><h3 id="About">About<a class="anchor-link" href="#About">¶</a></h3><p>This collection pertains to datasets utilized for analyzing the response to immune therapy across various cancer types. Each dataset is characterized by the cohort size, the specific type of cancer studied, the count of patients categorized into responders and non-responders, the sequencing technology used, and associated scholarly references.</p>
-<p>These datasets are crucial for researching the effectiveness of immune therapies, understanding the molecular and genetic factors influencing patient response, and developing personalized treatment strategies. Please download all of these datasets via <a href="https://drive.google.com/drive/folders/1ZsLvB9xUYHs4OrAXMXRYeKXNoaxMbMsG">Google Drive</a></p>
-<table>
-<thead>
-<tr>
-<th>Group</th>
-<th>Cohort</th>
-<th>Cancer Type</th>
-<th>Patients(R/NR)</th>
-<th>Sequencer</th>
-<th>Reference</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Small cohort</td>
-<td>Choueiri</td>
-<td>KIRC</td>
-<td>16(3/13)</td>
-<td>HiSeq2500</td>
-<td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5106340/">Choueiri et al. Clinical Cancer Research, 2016</a></td>
-</tr>
-<tr>
-<td>Small cohort</td>
-<td>Miao</td>
-<td>KIRC</td>
-<td>17(5/12)</td>
-<td>HiSeq2000</td>
-<td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6035749/">Miao et al. Science, 2018</a></td>
-</tr>
-<tr>
-<td>Small cohort</td>
-<td>Snyder</td>
-<td>BLCA</td>
-<td>21(7/14)</td>
-<td>HiSeq4000</td>
-<td><a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002309">Snyder et al. PLoS Med. 2017</a></td>
-</tr>
-<tr>
-<td>Small cohort</td>
-<td>Zhao</td>
-<td>GBM</td>
-<td>25(11/14)</td>
-<td>HiSeq2000</td>
-<td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6810613/">Zhao et al. Nature Medicine, 2019</a></td>
-</tr>
-<tr>
-<td>Small cohort</td>
-<td>SU2CLC2</td>
-<td>LUSC</td>
-<td>25(8/17)</td>
-<td>HiSeq2500</td>
-<td><a href="https://www.nature.com/articles/s41588-023-01355-5">Ravi et al. Nature Genetics, 2023</a></td>
-</tr>
-<tr>
-<td>Small cohort</td>
-<td>Hugo</td>
-<td>SKCM</td>
-<td>26(14/12)</td>
-<td>HiSeq2000</td>
-<td><a href="https://pubmed.ncbi.nlm.nih.gov/26997480/">Hugo et al. Cell, 2016</a></td>
-</tr>
-<tr>
-<td>Medium cohort</td>
-<td>Allen</td>
-<td>SKCM</td>
-<td>39(13/26)</td>
-<td>HiSeq2500</td>
-<td><a href="https://www.ncbi.nlm.nih.gov/pubmed/26359337">Van Allen et al. Science, 2015</a></td>
-</tr>
-<tr>
-<td>Medium cohort</td>
-<td>MGH</td>
-<td>SKCM</td>
-<td>34(12/22)</td>
-<td>HiSeq2500</td>
-<td><a href="https://pubmed.ncbi.nlm.nih.gov/35243413/">Freeman et al Cell Rep. Med, 2022</a></td>
-</tr>
-<tr>
-<td>Medium cohort</td>
-<td>Kim</td>
-<td>STAD</td>
-<td>45(12/33)</td>
-<td>HiSeq2500</td>
-<td><a href="https://pubmed.ncbi.nlm.nih.gov/30013197/">Kim et al. Nature Medicine, 2018</a></td>
-</tr>
-<tr>
-<td>Medium cohort</td>
-<td>Riaz</td>
-<td>SKCM</td>
-<td>51(10/41)</td>
-<td>HiSeq2000/2500</td>
-<td><a href="https://www.ncbi.nlm.nih.gov/pubmed/29033130">Riaz et al. Cell, 2017</a></td>
-</tr>
-<tr>
-<td>Medium cohort</td>
-<td>Rose</td>
-<td>BLCA</td>
-<td>89(16/73)</td>
-<td>NovaSeq6000</td>
-<td><a href="https://www.nature.com/articles/s41416-021-01488-6">Rose et al. BJC 2021</a></td>
-</tr>
-<tr>
-<td>Medium cohort</td>
-<td>Gide</td>
-<td>SKCM</td>
-<td>73(40/33)</td>
-<td>HiSeq2500</td>
-<td><a href="https://pubmed.ncbi.nlm.nih.gov/30753825/">Gide et al. Cancer Cell, 2019</a></td>
-</tr>
-<tr>
-<td>Large cohort</td>
-<td>SU2CLC1</td>
-<td>LUAD</td>
-<td>102(38/64)</td>
-<td>HiSeq2500</td>
-<td><a href="https://www.nature.com/articles/s41588-023-01355-5">Ravi et al. Nature Genetics, 2023</a></td>
-</tr>
-<tr>
-<td>Large cohort</td>
-<td>Liu</td>
-<td>SKCM</td>
-<td>107(41/66)</td>
-<td>HiSeq2500</td>
-<td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6898788/">Liu et al. Nature Medicine. 2019</a></td>
-</tr>
-<tr>
-<td>Large cohort</td>
-<td>IMmotion150</td>
-<td>KIRC</td>
-<td>165(48/117)</td>
-<td>HiSeq2500</td>
-<td><a href="https://pubmed.ncbi.nlm.nih.gov/29867230/">McDermott et al. Nature Medicine, 2018</a></td>
-</tr>
-<tr>
-<td>Large cohort</td>
-<td>IMVigor210</td>
-<td>BLCA</td>
-<td>298(68/230)</td>
-<td>HiSeq2500</td>
-<td><a href="https://www.nature.com/articles/nature25501.pdf">IMvigor210 Study Group. The Lancet, 2017</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="Acknowledgments">Acknowledgments<a class="anchor-link" href="#Acknowledgments">¶</a></h3><p>We extend our heartfelt gratitude to all the patients who participated in these studies, offering invaluable contributions to the advancement of medical science. Their willingness to be part of this research has played a crucial role in enhancing our understanding of immune therapy responses. We also express our sincere appreciation to the doctors, whose expertise and dedication have been instrumental in the meticulous collection and analysis of the data. Their commitment to excellence ensures the reliability and significance of these datasets. Furthermore, we acknowledge the hard work and perseverance of the scientific workers involved in these projects. Their rigorous efforts in data processing, analysis, and maintenance have been essential in developing these comprehensive datasets. Together, the collaboration of patients, doctors, and scientific workers has paved the way for significant advancements in the field of oncology and personalized medicine.</p>
-<h3 id="Statement-of-Ethical-Compliance-and-Liability">Statement of Ethical Compliance and Liability<a class="anchor-link" href="#Statement-of-Ethical-Compliance-and-Liability">¶</a></h3><p>We hereby declare that in the process of acquiring, handling, and analyzing these datasets, we have strictly adhered to the highest standards of ethics and scientific integrity. No actions were taken that would harm the principles of ethics or the integrity of scientific research. Additionally, all procedures and analyses were conducted in full compliance with the applicable legal and regulatory requirements.</p>
-<p>We emphasize that our role was confined to the development and analysis of these datasets, and we bear no responsibility or liability for the outcomes or results produced by third parties using these data sets. Users of these datasets should independently verify the data and ensure their analyses are compliant with ethical and legal standards. We encourage the responsible use of these datasets in a manner that respects the dignity, privacy, and rights of all participants involved in the studies.es.</p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><p>Since some features in the more pre-trained or fine-tuned concept model are correlated to patient CPI response status, among the 45 pre-trained features, we found that the following features are highly correlated features, such as <code>CD8_Tcell</code>,<code>CD4_Tcell</code>, <code>Cytotoxic_Tcell</code>,<code>Exhausted_Tcell</code>, <code>Macrophage</code>, <code>NKcell</code>, <code>TMB</code>, <code>PLFcell</code>, <code>Memory_Tcell</code>, <code>IFNg_pathway</code>, <code>Monocyte</code>, <code>Myeloid</code>, etc.</p>
+<hr/>
+<p>In this example, we demonstrate how to extract features based on pretrainer or finetuner for building a logistic regression model</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6cfae357-f064-488c-9b4b-af7527b848bb">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d9325d2e-d6a2-45d7-ad1a-7b3c4f0ed50d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7640,26 +7496,51 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>01_ITRP_datasets_description.ipynb
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="s1">'./tmpignore/conceptor'</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">conceptor.utils</span> <span class="kn">import</span> <span class="n">plot_embed_with_label</span>
+<span class="kn">from</span> <span class="nn">conceptor</span> <span class="kn">import</span> <span class="n">PreTrainer</span><span class="p">,</span> <span class="n">FineTuner</span><span class="p">,</span> <span class="n">loadconceptor</span> <span class="c1">#, get_minmal_epoch</span>
+<span class="kn">from</span> <span class="nn">conceptor.utils</span> <span class="kn">import</span> <span class="n">plot_embed_with_label</span><span class="p">,</span> <span class="n">plot_performance</span><span class="p">,</span> <span class="n">score2</span>
+<span class="kn">from</span> <span class="nn">conceptor.tokenizer</span> <span class="kn">import</span> <span class="n">CANCER_CODE</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">chain</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">random</span><span class="o">,</span> <span class="nn">torch</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span> <span class="o">=</span> <span class="s1">'white'</span><span class="p">,</span> <span class="n">font_scale</span><span class="o">=</span><span class="mf">1.3</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">"ignore"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">onehot</span><span class="p">(</span><span class="n">S</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="o">==</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">,</span> <span class="s1">'Input type should be pd.Series'</span>
+    <span class="n">dfd</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">dummy_na</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">nanidx</span> <span class="o">=</span> <span class="n">dfd</span><span class="p">[</span><span class="n">dfd</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">bool</span><span class="p">)]</span><span class="o">.</span><span class="n">index</span>
+    <span class="n">dfd</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">nanidx</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="n">dfd</span> <span class="o">=</span> <span class="n">dfd</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">])</span><span class="o">*</span><span class="mf">1.</span>
+    <span class="n">cols</span> <span class="o">=</span> <span class="n">dfd</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="n">dfd</span> <span class="o">=</span> <span class="n">dfd</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">dfd</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[NbConvertApp] Converting notebook 01_ITRP_datasets_description.ipynb to html
-</pre>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fe500b31-6134-4ee7-9062-adb8628b71c8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Extract-the-features-to-be-used-in-a-LGR-model">Extract the features to be used in a LGR model<a class="anchor-link" href="#Extract-the-features-to-be-used-in-a-LGR-model">¶</a></h2>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=be6c513a-12f2-4329-9846-17b901290e85">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cd568468-1dec-46ba-9450-69d950b78650">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7667,13 +7548,199 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## load model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">loadconceptor</span><span class="p">(</span><span class="s1">'./tmpignore/pretrainer.pt'</span><span class="p">)</span>
+
+<span class="c1">## read data</span>
+<span class="n">df_label</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'./tmpignore/ITRP.PATIENT.TABLE'</span><span class="p">)</span>
+<span class="n">df_tpm</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'./tmpignore/ITRP.TPM.TABLE'</span><span class="p">)</span>
+
+<span class="n">df_label</span> <span class="o">=</span> <span class="n">df_label</span><span class="p">[</span><span class="n">df_label</span><span class="o">.</span><span class="n">cohort</span> <span class="o">==</span> <span class="s1">'IMmotion150'</span><span class="p">]</span>
+<span class="n">df_tpm</span> <span class="o">=</span> <span class="n">df_tpm</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_label</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+<span class="n">dfcx</span> <span class="o">=</span> <span class="n">df_label</span><span class="o">.</span><span class="n">cancer_type</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">CANCER_CODE</span><span class="p">)</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="s1">'cancer_code'</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">df_tpm</span><span class="p">)</span>
+<span class="n">df_task</span> <span class="o">=</span> <span class="n">onehot</span><span class="p">(</span><span class="n">df_label</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">dfcx</span><span class="o">.</span><span class="n">index</span><span class="p">]</span><span class="o">.</span><span class="n">response_label</span><span class="p">)</span>
+
+<span class="n">dfcx</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=46ba3d30-e9c2-40bf-9b26-3cccaa393582">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e98dfdfd-7ce3-4966-9674-34bbdadb7f20">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Extract the features, including geneset features and celltype features</span>
+<span class="n">dfg</span><span class="p">,</span> <span class="n">dfc</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">dfcx</span><span class="p">,</span> <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">16</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3799cdb7-6186-43bb-b7f9-9d3362da987c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## all of the 45 borader features</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfc</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a4d863a7-5183-448a-bf26-fb36bbd2bfe4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">selected_features</span> <span class="o">=</span>  <span class="p">[</span><span class="s1">'CD8_Tcell'</span><span class="p">,</span> <span class="s1">'CD4_Tcell'</span><span class="p">,</span> <span class="s1">'Cytotoxic_Tcell'</span><span class="p">,</span> 
+                      <span class="s1">'Exhausted_Tcell'</span><span class="p">,</span> <span class="s1">'Macrophage'</span><span class="p">,</span> <span class="s1">'NKcell'</span><span class="p">,</span> <span class="s1">'TMB'</span><span class="p">,</span> <span class="s1">'CPI_effect'</span><span class="p">,</span>
+                      <span class="s1">'PLFcell'</span><span class="p">,</span> <span class="s1">'Memory_Tcell'</span><span class="p">,</span> <span class="s1">'Monocyte'</span><span class="p">,</span> <span class="s1">'Myeloid'</span> <span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1bc307ce-00dc-436e-96a5-3bbe7f50d090">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Build-a-LGR-model">Build a LGR model<a class="anchor-link" href="#Build-a-LGR-model">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=98c7f4ea-abfe-4915-a3bd-e8b04a59592b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span><span class="p">,</span> <span class="n">LeaveOneOut</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=29a7aefb-55c6-4cfc-b376-e2517e154279">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">cohort_dfx</span> <span class="o">=</span> <span class="n">dfc</span><span class="p">[</span><span class="n">selected_features</span><span class="p">]</span>
+<span class="n">cohort_dfy</span> <span class="o">=</span> <span class="n">df_task</span><span class="p">[</span><span class="s1">'R'</span><span class="p">]</span>
+
+<span class="c1"># split train, test</span>
+<span class="n">test_idx</span> <span class="o">=</span> <span class="n">df_label</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'response_label'</span><span class="p">)</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span><span class="o">.</span><span class="n">index</span>
+<span class="n">train_idx</span> <span class="o">=</span> <span class="n">df_label</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">test_idx</span><span class="p">)</span>
+
+<span class="n">train_X</span> <span class="o">=</span> <span class="n">cohort_dfx</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">train_idx</span><span class="p">]</span>
+<span class="n">train_y</span> <span class="o">=</span> <span class="n">cohort_dfy</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">train_idx</span><span class="p">]</span>
+<span class="n">test_X</span> <span class="o">=</span> <span class="n">cohort_dfx</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">test_idx</span><span class="p">]</span>    
+<span class="n">test_y</span> <span class="o">=</span> <span class="n">cohort_dfy</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">test_idx</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">train_idx</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_idx</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ba73910b-a010-4554-9b27-3a8ddf9c5f12">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'penalty'</span><span class="p">:[</span><span class="s1">'l2'</span><span class="p">],</span> <span class="s1">'max_iter'</span><span class="p">:[</span><span class="nb">int</span><span class="p">(</span><span class="mf">1e10</span><span class="p">)],</span> <span class="s1">'solver'</span><span class="p">:[</span><span class="s1">'lbfgs'</span><span class="p">],</span>
+              <span class="s1">'C'</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span> <span class="s1">'class_weight'</span><span class="p">:[</span><span class="s1">'balanced'</span><span class="p">]</span> <span class="p">}</span>
+
+<span class="n">lgr_model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
+<span class="n">gcv</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">lgr_model</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> 
+                   <span class="n">scoring</span><span class="o">=</span><span class="s1">'roc_auc'</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fb3ac464-5337-4b42-9a88-3752240e7398">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Make-prediction-based-on-the-best-model">Make prediction based on the best model<a class="anchor-link" href="#Make-prediction-based-on-the-best-model">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=802f6aef-e39e-4ee6-8687-0bf5c8fb0e99">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pred_prob</span> <span class="o">=</span> <span class="n">gcv</span><span class="o">.</span><span class="n">best_estimator_</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">test_X</span><span class="p">)</span>
+<span class="n">pred_testy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">pred_prob</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="n">test_X</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">y_true</span> <span class="o">=</span> <span class="n">test_y</span>
+<span class="n">y_prob</span> <span class="o">=</span> <span class="n">pred_testy</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">pred_testy</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plot_performance</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_prob</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fd8692de-700e-4a4b-813a-53c8574c24d2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Discussions">Discussions<a class="anchor-link" href="#Discussions">¶</a></h2><p>In this example, we show how to build a LGR model based on the conceptor features. In practical, you can also extract the features from a finetuned model insead of the pretrained model</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=27bbb3c2-fe66-428a-990d-30a22f204f66">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--output-dir<span class="o">=</span><span class="s1">'../docs'</span><span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>04_logstic_regression.ipynb
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=25132d8a-1395-4c49-96f4-faaf4d0a70c8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>

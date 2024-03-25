@@ -11,6 +11,7 @@ Date: 2024-03-17
 [![Codebase](https://img.shields.io/badge/Codebase-Github-green)](https://github.com/mims-harvard/conceptor)
 [![Document](https://img.shields.io/badge/Document-Github-yellow)](https://github.com/mims-harvard/conceptor-101/)
 [![Slack](https://img.shields.io/badge/Project-Slack-orange)](https://zitniklab-harvard.slack.com/archives/C05S6LEQ3ED)
+[![Paper](https://img.shields.io/badge/Paper-Slack-blue)](https://www.overleaf.com/project/65675762ab879fbbe676398d)
 
 
 
