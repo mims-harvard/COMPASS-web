@@ -20,7 +20,7 @@ Please download all the files listed and save them to a folder on your local mac
 
 | File                                                                                                           | Description                                                                  |
 | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [conceptor](https://drive.google.com/open?id=1pcxzWXf-zq21TOjrCf1fHX6Dwgq8MThm&usp=drive_copy)                 | Conceptor main code, add to your python path to import                       |
+| [compass](https://drive.google.com/open?id=1pcxzWXf-zq21TOjrCf1fHX6Dwgq8MThm&usp=drive_copy)                 | Conceptor main code, add to your python path to import                       |
 | [pretrainer.pt](https://drive.google.com/open?id=1JnsKsacRiw0bRVpdP6DxbueFc0RmqYO9&usp=drive_copy)             | Pretrained model on TCGA data                                                |
 | [finetuner_LFT_all.pt](https://drive.google.com/open?id=1dtI_y4R_FXA0SFKnUIp_--d4ufKJEgE8&usp=drive_copy)       | Fintuned model on ALL ITRP data (Linear probing)               |
 | [finetuner_PFT_all.pt](https://drive.google.com/open?id=1fRWLtTJF49bSjO13kdC20Y0qtLYCvHkT&usp=drive_copy)       | Fintuned model on ALL ITRP data (Patial Finetuning)               |
