@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Immuno-Compass: A research tool for ICI response prediction from transcriptomic data." />
+  <meta name="keywords" content="Immunotherapy, ICI Response, Transcriptomics, Prediction Tool, Compass" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COMPASS</title>
+  <link rel="icon" href="https://www.immuno-compass.com/image/compass_logo.png" type="image/x-icon" />
+
+  <style>
+    /* 背景容器 */
+    #bg-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1; /* 确保背景在内容后面 */
+    }
+    /* 背景图片 div */
+    .bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      transition: transform 1s ease-in-out;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navigation bar */
+    header {
+      background: #2c3e50;
+      color: #fff;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .navbar li {
+      margin: 0;
+    }
+    .navbar a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+    .navbar a:hover {
+      background: #1a252f;
+    }
+    .navbar a.active {
+      background: #3498db;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* Hero Section */
+    .hero-content-wrapper {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 60px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+      flex: 1;
+      width: 100%;
+      text-align: center;
+      justify-content: center; /* 垂直居中 */
+    }
+
+
+
+      
+    .hero-content-wrapper h1,
+    .hero-content-wrapper p,
+    .hero-content-wrapper h2 {
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      margin: 20px 0;
+      margin-top: 100px;
+    }
+    .hero-content-wrapper p {
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero-content-wrapper h1 {
+      font-size: 2.5rem;
+    }
+    .hero-content-wrapper h2 {
+      font-size: 2rem;
+      margin-top: 40px;
+    }
+
+    /* Disclaimer */
+    .disclaimer {
+      font-size: 0.9rem;
+      color: #ff6b6b;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .spin {
+      animation: spin 10s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- 背景容器 -->
+  <div id="bg-container"></div>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="https://www.immuno-compass.com/index.html" class="active">Home</a></li>
+        <li><a href="https://www.immuno-compass.com/predict/index.html">Predict</a></li>
+        <li><a href="https://www.immuno-compass.com/extract/index.html">Extract</a></li>
+        <li><a href="https://www.immuno-compass.com/explore/index.html">Explore</a></li>
+        <li><a href="https://www.immuno-compass.com/help/index.html">Help</a></li>
+        <li><a href="https://www.immuno-compass.com/download/index.html">Download</a></li>
+        <li><a href="https://www.immuno-compass.com/about/index.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-content-wrapper">
+
+    <h1>Welcome to COMPASS</h1>
+
+    <h2>
+      <!-- Immuno-Compass is a research tool for exploring transcriptomic features and predicting ICI (Immune Checkpoint Inhibitor) response, aiding immunotherapy-related studies. By leveraging advanced machine learning models and curated datasets, it enhances understanding of immunotherapy responses. -->
+    Generalizable AI predicts immunotherapy outcomes across cancers and treatments.
+    </h2>
+
+  </section>
+
+  <!-- External Resources -->
+  <section style="text-align: center; margin-top: 10px;">
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+      <a href="https://github.com/mims-harvard/COMPASS" target="_blank">
+        <img src="https://img.shields.io/badge/Codebase-Github-green" alt="Codebase" style="width: 120px; height: 25px;">
+      </a>
+      <a href="https://github.com/mims-harvard/COMPASS-web" target="_blank">
+        <img src="https://img.shields.io/badge/Document-Github-yellow" alt="Document" style="width: 120px;height: 25px;">
+      </a>
+      <a href=medRxiv" target="_blank">
+        <img src="https://img.shields.io/badge/Paper-medRxiv-orange" alt="medRxiv" style="width: 120px;height: 25px;">
+      </a>
+      <!-- <a href="https://www.overleaf.com/project/65675762ab879fbbe676398d" target="_blank">
+        <img src="https://img.shields.io/badge/Paper-Overleaf-blue" alt="Paper" style="width: 120px; height: 25px;">
+      </a> -->
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 COMPASS. All Rights Reserved.</p>
+    <p><a href="mailto:contact@immuno-compass.com">Contact Us</a> | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <!-- JavaScript 部分 -->
+  <script>
+    // 定义需要循环切换的背景图片数组
+    const images = [
+      './image/compass_background_remove.png',
+      './image/compass_background1.png',
+      // './image/compass_background2.png',
+      // './image/compass_background3.png',
+      './image/compass_background5.png',
+      // './image/compass_background6.png',
+      './image/compass_background7.png'
+    ];
+
+    let currentIndex = 0;
+    const bgContainer = document.getElementById('bg-container');
+
+    // 初始化时使用第一张图片
+    let currentBgDiv = document.createElement('div');
+    currentBgDiv.classList.add('bg-image');
+    currentBgDiv.style.backgroundImage = `url(${images[currentIndex]})`;
+    bgContainer.appendChild(currentBgDiv);
+
+    // 更新索引为下一张图片
+    currentIndex = (currentIndex + 1) % images.length;
+
+    // 每隔5秒切换一次背景，采用从左到右渐进的过渡效果
+    setInterval(() => {
+      // 创建新的背景 div，初始位置设置在屏幕左侧（-100%）
+      const nextBgDiv = document.createElement('div');
+      nextBgDiv.classList.add('bg-image');
+      nextBgDiv.style.backgroundImage = `url(${images[currentIndex]})`;
+      nextBgDiv.style.transform = 'translateX(-100%)';
+      bgContainer.appendChild(nextBgDiv);
+
+      // 延时触发过渡（确保浏览器已应用初始状态）
+      setTimeout(() => {
+        // 新的背景滑入到正确位置
+        nextBgDiv.style.transform = 'translateX(0)';
+        // 当前背景同时向右滑出
+        currentBgDiv.style.transform = 'translateX(100%)';
+      }, 50);
+
+      // 过渡结束后（1秒后）移除旧背景，更新当前背景引用
+      setTimeout(() => {
+        bgContainer.removeChild(currentBgDiv);
+        currentBgDiv = nextBgDiv;
+      }, 1050);
+
+      // 更新索引
+      currentIndex = (currentIndex + 1) % images.length;
+    }, 10000);
+  </script>
+</body>
+</html>
