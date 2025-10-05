@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>04_logstic_regression</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>08_compass_LGR</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7517,9 +7517,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><p>Since some features in the more pre-trained or fine-tuned concept model are correlated to patient CPI response status, among the 45 pre-trained features, we found that the following features are highly correlated features, such as <code>CD8_Tcell</code>,<code>CD4_Tcell</code>, <code>Cytotoxic_Tcell</code>,<code>Exhausted_Tcell</code>, <code>Macrophage</code>, <code>NKcell</code>, <code>TMB</code>, <code>PLFcell</code>, <code>Memory_Tcell</code>, <code>IFNg_pathway</code>, <code>Monocyte</code>, <code>Myeloid</code>, etc.</p>
-<hr/>
-<p>In this example, we demonstrate how to extract features based on pretrainer or finetuner for building a logistic regression model</p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><p>In this workflow, we demonstrate how to integrate <strong>COMPASS</strong> with a <strong>Logistic regression (LGR) model</strong> for predicting immunotherapy response. COMPASS serves as a biologically informed feature extractor that transforms transcriptomic profiles into <strong>44 high-level tumor immune microenvironment (TIME) concepts</strong>, pretrained on large-scale TCGA data. Among these concepts, several—such as <strong>Cytotoxic_Tcell, IFNg_pathway, Exhausted_Tcell,  TGFb_pathway, Bcell_general, Plasma_cell</strong>—show strong correlations with checkpoint inhibitor (CPI) response status, reflecting key determinants of antitumor immunity.</p>
+<p>In this example, we illustrate how to extract these concept-level features from either the <strong>pretrained</strong> or <strong>fine-tuned</strong> COMPASS model and use them as input covariates to train a logistic regression classifier. This approach combines the interpretability and robustness of classical statistical modeling with the biological relevance of COMPASS-derived features, enabling <strong>accurate and explainable prediction of CPI response</strong> across patient cohorts.</p>
 </div>
 </div>
 </div>
@@ -7835,7 +7834,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## all of the 45 borader features</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## all of the 44 borader features</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">dfc</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7874,8 +7873,8 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">selected_features</span> <span class="o">=</span>  <span class="p">[</span><span class="s1">'CD8_Tcell'</span><span class="p">,</span> <span class="s1">'CD4_Tcell'</span><span class="p">,</span> <span class="s1">'Cytotoxic_Tcell'</span><span class="p">,</span> 
-                      <span class="s1">'Exhausted_Tcell'</span><span class="p">,</span> <span class="s1">'Macrophage'</span><span class="p">,</span> <span class="s1">'NKcell'</span><span class="p">,</span> <span class="s1">'TMB'</span><span class="p">,</span> <span class="s1">'CPI_effect'</span><span class="p">,</span>
-                      <span class="s1">'PLFcell'</span><span class="p">,</span> <span class="s1">'Memory_Tcell'</span><span class="p">,</span> <span class="s1">'Monocyte'</span><span class="p">,</span> <span class="s1">'Myeloid'</span> <span class="p">]</span>
+                      <span class="s1">'Exhausted_Tcell'</span><span class="p">,</span> <span class="s1">'Macrophage'</span><span class="p">,</span> <span class="s1">'NKcell'</span><span class="p">,</span> 
+                      <span class="s1">'Memory_Tcell'</span><span class="p">,</span> <span class="s1">'Monocyte'</span><span class="p">,</span> <span class="s1">'Myeloid'</span> <span class="p">]</span>
 </pre></div>
 </div>
 </div>
